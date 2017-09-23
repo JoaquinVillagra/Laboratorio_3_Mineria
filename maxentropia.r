@@ -1,6 +1,6 @@
-#Laboratorio 3 Minería de Datos Avanzada
-#Ignacio Ibañez Aliaga
-#Joaquín Villagra Pacheco
+#Laboratorio 3 Miner??a de Datos Avanzada
+#Ignacio Ibanez Aliaga
+#Joaquin Villagra Pacheco
 
 #Importando datos
 require(maxent)
