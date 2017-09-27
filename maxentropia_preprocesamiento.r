@@ -39,5 +39,5 @@ print(f)
 # 0.5103830           1.0000000
 # l1_regularizer=0.0, l2_regularizer=0.4
 
-model<-maxent(sparse[1:2100,],data$Topic.Code[1:2100], l1_regularizer=0.0, l2_regularizer=0.4, use_sgd=FALSE, set_heldout=0, verbose=TRUE)
+model<-maxent(sparse[1:2100,],data$Topic.Code[1:2100], l1_regularizer=0.0, l2_regularizer=0.8, use_sgd=FALSE, set_heldout=0, verbose=TRUE)
 results <- predict(model,sparse[2200:2220,]) 

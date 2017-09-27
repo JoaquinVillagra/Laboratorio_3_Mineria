@@ -15,7 +15,7 @@ corpus_p <- Corpus(VectorSource(data$Title[1:3104]))
 
 ##############  Datos sin preprocesamiento
 corpus_p[[1]]$content
-for (i in 1:10) print (corpus_p[[i]]$content) 
+#for (i in 1:10) print (corpus_p[[i]]$content) 
 
 matrix1 <- DocumentTermMatrix(corpus_p)
 sparse1 <- as.compressed.matrix(matrix1)
