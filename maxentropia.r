@@ -27,7 +27,5 @@ print(f1)
 model1  <- maxent(sparse1[1:1500,],data$Topic.Code[1:1500], l1_regularizer=0.2, l2_regularizer=0.0, use_sgd=FALSE, set_heldout=0, verbose=TRUE)
 results <- predict(model1,sparse1[100:120,])
 
-ref_data <- results[,"labels"]
-predictions <- results[,"1"]
-confusion_matrix <- confusionMatrixFor_Neg1_0_1(ref_data, predictions)
+confusion_matrix <- confusionMatrixFor_Neg1_0_1(model1)
 statsFromConfusionMatrix(confusion_matrix)
